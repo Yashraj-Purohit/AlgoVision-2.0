@@ -1,12 +1,6 @@
 # AlgoVision 2.0 — Project report
 
-Author: [YOUR FULL NAME]  
-College: [YOUR COLLEGE]  
-Course and branch: [YOUR COURSE / BRANCH]  
-Year: [YOUR YEAR OF STUDY]  
-Internship domain: Data Structures and Algorithms  
-Organization: LaunchED  
-Submission date: [ACTUAL SUBMISSION DATE]
+A standalone data structures and algorithms analytics application.
 
 ## 1. Problem statement
 
@@ -124,7 +118,7 @@ These are implemented features. They are not claims of compliance with enterpris
 
 ## 7. Challenges and technical solutions
 
-These describe implementation challenges, not invented personal internship experiences.
+The implementation addresses the following technical challenges.
 
 | Challenge | Solution | Tradeoff |
 |---|---|---|
@@ -147,13 +141,13 @@ Catalog ingestion/search corresponds to e-commerce inventory analytics. Integer 
 
 Supabase already supplies persistent per-user data, transactional import/reset operations, composite ID uniqueness and access rules. For larger deployments, add a shared session store, asynchronous batch workers, incremental balanced indexing, production observability and operational demand/traffic validation. Million-record analytics and public multi-instance deployment are outside the current scope. See COMPLEXITY.md for detailed limitations.
 
-## 10. Reflection prompts for the student
+## 10. Design considerations
 
-Before recording, explain in your own words why a hash index costs extra space, why a balanced BST helps range search, why top-K uses a heap, why greedy is not always optimal, how DP traceback works, and why negative route weights invalidate Dijkstra. Add your real internship experience, problems you personally encountered, and what you learned. Do not present the template's prompts as events that happened to you.
+The hash index trades memory for faster exact lookups. The balanced price BST supports ordered range queries, while a bounded heap limits the memory needed for top-K retrieval. Greedy allocation provides a fast heuristic; dynamic programming produces the exact 0/1 optimum. Dijkstra uses nonnegative edge weights and parent pointers to reconstruct the route. These decisions are directly inspectable in the source and test suite.
 
-## 11. Requirement traceability
+## 11. Feature coverage
 
-| Project brief requirement | Implementation / evidence |
+| Capability | Implementation / evidence |
 |---|---|
 | Unified analytics across logistics, e-commerce, fintech | One dashboard with catalog, routing and capital planning |
 | Data ingestion: queues, hashing | Queue and Catalog.ingest; ingestion view; validation tests |
@@ -164,14 +158,10 @@ Before recording, explain in your own words why a hash index costs extra space, 
 | Modular source and documentation | src modules, README, docs folder |
 | Algorithmic complexity and optimization report | COMPLEXITY.md; algorithm lab |
 | Functional prototype or visualization dashboard | Runnable app with eight views, Node API and Supabase backend |
-| Concept coverage: 25% | Required algorithms, explanations and traceability |
-| Code quality: 25% | Modular pure core, bounds, deterministic outputs, tests |
-| Practical relevance: 25% | Coherent commerce scenario and explicit scaling tradeoffs |
-| Presentation and reflection: 25% | DEMO_SCRIPT.md and honest reflection prompts |
 
-## 12. Source requirements
+## 12. Implementation choices
 
-This project follows the user-provided DSA Capstone Project 1.pdf (one-page AlgoVision 2.0 project brief) and Capstone_Project_Submission_Guidelines_Sep_2026.pdf (submission workflow). No additional mandatory language, framework, page count, or dataset is specified in those files. JavaScript, Supabase persistence, and the chosen scenarios are implementation choices. The prototype addresses all three stated industry areas to avoid narrowing the brief to one sector.
+JavaScript ES modules allow the browser, Node API and tests to share one algorithm layer. Supabase provides authentication and database persistence. The product catalog, budget allocation and delivery network demonstrate applications across commerce and logistics using synthetic inputs.
 
 ## 13. Backend delivery and verification
 

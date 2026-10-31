@@ -71,14 +71,14 @@ Cloud calculation pages run their default example on opening and save it as a ru
 
 ## Operational boundaries
 
-- The Node listener is loopback-only and designed for a capstone demonstration. It is not deployed to the internet.
+- The Node listener is loopback-only and designed for local demonstrations. It is not deployed to the internet.
 - Sessions are held in memory for at most 12 hours. Restarting Node signs users out, but database records remain. A production multi-instance service needs a shared session store.
 - Cookies are HttpOnly/SameSite=Strict; Secure can be enabled for HTTPS. The current strict origin allowlist intentionally permits only the specified localhost port. A public deployment requires deliberate origin/host/proxy and HTTPS configuration.
 - Local auth requests have a bounded per-IP attempt window. Supabase's own rate limits and email policies also apply. Production abuse controls and password recovery are not implemented here.
 - Product retrieval is paginated in 500-row pages. It is not a transactionally consistent snapshot across simultaneous writes from other devices. Refresh to see other-device updates; no realtime subscription is claimed.
-- Price BST and heap queries run over the loaded catalog in the browser. Import validation, allocation and routing execute in Node in cloud mode. This preserves the capstone DSA demonstrations while adding durable persistence.
+- Price BST and heap queries run over the loaded catalog in the browser. Import validation, allocation and routing execute in Node in cloud mode. This preserves the DSA demonstrations while adding durable persistence.
 - Network latency, Auth verification and DB operations add cost beyond the core algorithm complexities. Database capacity checks and indexes are separate from the in-memory complexity report.
-- `.env` and backend source are blocked by the HTTP static-file allowlist. `.env` must be excluded from version control and shared submission archives. The packaging procedure excludes it explicitly.
+- `.env` and backend source are blocked by the HTTP static-file allowlist. `.env` must be excluded from version control and shared source archives. The packaging procedure excludes it explicitly.
 - Email/password sign-in accepts existing 8–128 character passwords. OAuth, MFA, password recovery UI, team workspaces, live traffic and real money operations are outside scope.
 
 ## Official references consulted

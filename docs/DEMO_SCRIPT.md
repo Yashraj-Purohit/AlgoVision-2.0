@@ -1,21 +1,19 @@
 # Project demonstration script — target 8 minutes
 
-Record an MP4 lasting 5–10 minutes. The introduction MUST be in English. The technical walkthrough may be English or Hindi; the script below uses English. Replace every bracketed placeholder with your true details. Do not invent internship experiences or claim you wrote components you do not understand.
+An optional eight-minute walkthrough of the application. Adapt the language, duration and presentation format to your audience.
 
 ## Before recording
 
-- Fill personal details in PROJECT_REPORT.md and this introduction.
+- Review the project report and choose the features you want to demonstrate.
 - Start the app with npm start and open http://127.0.0.1:4173.
 - Sign in from Account & history, load the sample catalog, then keep sample-import-errors.json and sample-opportunities.json handy.
 - Run npm test and keep the passing test output available.
 - Use a quiet place, clear microphone, professional tone, readable screen zoom and clean visuals. If using a webcam, check framing and lighting. Use stable internet if screen sharing.
 - Rehearse once. Aim for 8 minutes; cut repetition rather than rushing.
 
-## 0:00–0:50 — Introduction, English only
+## 0:00–0:50 — Introduction
 
-“Hello, my name is [FULL NAME]. I am studying [COURSE AND BRANCH] at [COLLEGE NAME], and I am currently in [YEAR] of my course. My internship domain with LaunchED is Data Structures and Algorithms. During the internship, [ONE OR TWO TRUTHFUL SENTENCES ABOUT YOUR EXPERIENCE].
-
-My capstone project is AlgoVision 2.0, a unified analytics prototype that applies data structures and algorithms to product catalogs, capital allocation and delivery routing. I will demonstrate the working project, explain the algorithms and discuss their tradeoffs.”
+“AlgoVision 2.0 is a standalone analytics application that applies data structures and algorithms to product catalogs, capital allocation and delivery routing. This demonstration covers the working application, its algorithms and their tradeoffs.”
 
 ## 0:50–1:30 — Problem, tools, architecture
 
@@ -83,12 +81,12 @@ Briefly show Account & history saved activity to demonstrate persisted imports a
 
 [ADD A REAL CHALLENGE YOU PERSONALLY FACED AND HOW YOU RESOLVED IT.]
 
-The result is a working prototype with all five required modules, modular source code, a complexity report, a visible graph dashboard, and tests. Current limits include in-memory Node sessions, a fixed sample route network, synchronous calculations and synthetic planning inputs. Supabase provides persistent per-user data; refresh loads other-device changes.
+The result is a working prototype with all five core modules, modular source code, a complexity report, a visible graph dashboard, and tests. Current limits include in-memory Node sessions, a fixed sample route network, synchronous calculations and synthetic planning inputs. Supabase provides persistent per-user data; refresh loads other-device changes.
 
-[ADD WHAT YOU PERSONALLY LEARNED, HOW YOU VALIDATED IT, AND A TRUTHFUL SENTENCE ABOUT YOUR INTERNSHIP EXPERIENCE.]
+[OPTIONAL: EXPLAIN YOUR TECHNICAL LEARNINGS AND NEXT IMPROVEMENTS.]
 
 Thank you for watching my AlgoVision 2.0 demonstration.”
 
 ## After recording
 
-Verify the MP4 opens, voice is clear, introduction is English, and duration is 5–10 minutes. Upload the MP4 separately to Drive with view access. Upload the same final demonstration video to LinkedIn with a detailed description and tags for LaunchED and your HOD. Follow SUBMISSION_CHECKLIST.md for all remaining steps.
+Check the recording's readability and audio. If sharing the project, include the repository link and setup instructions. Keep actual environment configuration and account credentials private.

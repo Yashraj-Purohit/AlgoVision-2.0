@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { createApi } from './backend/api.mjs';
 import { Supabase } from './backend/supabase.mjs';
 const root=dirname(fileURLToPath(import.meta.url));
-// Simple literal KEY=value parser. .env is never served or included in the submission ZIP.
+// Simple literal KEY=value parser. .env is never served or included in export archives.
 try {
   const env=await readFile(resolve(root,'.env'),'utf8');
   for(const line of env.split(/\r?\n/)) {

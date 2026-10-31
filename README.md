@@ -1,6 +1,6 @@
 # AlgoVision 2.0 — Analytics workspace
 
-A modular DSA capstone covering e-commerce catalog analytics, capital allocation and logistics routing. Version 1.1 added a Node application API and Supabase Auth/Postgres integration. Sample data is synthetic; algorithms are explicitly implemented in JavaScript.
+A modular DSA analytics platform covering e-commerce catalog analytics, capital allocation and logistics routing. Version 1.1 added a Node application API and Supabase Auth/Postgres integration. Sample data is synthetic; algorithms are explicitly implemented in JavaScript.
 
 Runs with Node.js 20+ and no npm dependencies. Start in local demo mode, or configure your own Supabase project for authentication and persistent data. Credentials are not included; use `.env.example` and [the backend setup guide](docs/SUPABASE_SETUP.md).
 
@@ -77,7 +77,6 @@ docs/PROJECT_REPORT.md       Project objectives, modules, architecture, outcomes
 docs/COMPLEXITY.md           Algorithmic complexity and efficiency analysis
 docs/SUPABASE_SETUP.md       Backend setup, API and operational boundaries
 docs/DEMO_SCRIPT.md          Timed 5–10 minute presentation script
-docs/SUBMISSION_CHECKLIST.md PDF requirements and remaining personal steps
 docs/TEST_REPORT.md          Verification and explicit live-cloud test limits
 ```
 
@@ -85,13 +84,11 @@ docs/TEST_REPORT.md          Verification and explicit live-cloud test limits
 
 19 Node tests pass, including independent algorithm references and mocked Supabase API contracts. The live schema is applied, all 21 pgTAP access-policy checks passed, and 22 live HTTP checks verified login, import/reset/delete, computed results, history and persistence across independent login sessions. An actual second physical device was not used. A runnable policy suite is included.
 
-This is a loopback capstone application, not a public production deployment. It has no payment processing, live traffic feed, realtime subscriptions, OAuth or password recovery interface. Sessions are in server memory. Deployment requires HTTPS, a shared session store as appropriate, and explicit permitted origins. Core algorithm complexity excludes network/Auth/database overhead.
+This is a loopback analytics application, not a public production deployment. It has no payment processing, live traffic feed, realtime subscriptions, OAuth or password recovery interface. Sessions are in server memory. Deployment requires HTTPS, a shared session store as appropriate, and explicit permitted origins. Core algorithm complexity excludes network/Auth/database overhead.
 
-## Submission
+## Project documentation
 
-Fill in your personal details in the report and script, understand the algorithms, then record a 5–10 minute MP4. The introduction must be English; the walkthrough may be English or Hindi. Use docs/SUBMISSION_CHECKLIST.md for Drive sharing, LinkedIn video/tags, Google review screenshot and the email-provided final form. Those external steps are not performed by this package. The supplied deadline is 31 October 2026 with no stated time/timezone.
-
-Prepared against DSA Capstone Project 1.pdf and Capstone_Project_Submission_Guidelines_Sep_2026.pdf. All sample values are invented. Review, customize and disclose AI assistance if your institution requires it. No company endorsement or certification is claimed.
+The [project report](docs/PROJECT_REPORT.md) explains the architecture and design decisions. The [complexity report](docs/COMPLEXITY.md) documents algorithmic tradeoffs, and the [demo script](docs/DEMO_SCRIPT.md) provides an optional walkthrough. All sample values are synthetic.
 
 ## Interface revision (v1.2)
 

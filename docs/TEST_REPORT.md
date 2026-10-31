@@ -35,7 +35,7 @@ JavaScript syntax checks passed for the algorithm module, application module and
 
 ## Limits of verification
 
-Submission Drive uploads, public sharing permissions, LinkedIn, Google review, recording duration/quality and final form submission have not been performed. Supabase backend provisioning is completed as documented below. JSON download controls are implemented; deterministic example exports are included in the package. Cross-browser file download and file-picker behavior has not been comprehensively tested. Large supported DP limits are analytically bounded; the automated correctness tests focus on independently verifiable instances rather than every maximum-size input.
+Supabase backend provisioning is documented below. JSON download controls are implemented; deterministic example exports are included in the package. Cross-browser file download and file-picker behavior has not been comprehensively tested. Large supported DP limits are analytically bounded; the automated correctness tests focus on independently verifiable instances rather than every maximum-size input.
 
 ## Local environment note
 
@@ -54,7 +54,7 @@ The backend is now live, superseding the original browser-only storage model des
 - Browser sign-in with the disposable synthetic test account loaded its persisted products and saved activity. Default optimizer calculation ran against the live server/Supabase path.
 - The live test account and its dependent records are removed after verification. No test password is packaged or retained in the final deliverable.
 
-A second physical device, public hosting and production load were not tested. Tests cover independent sessions on the same host rather than claiming a multi-device hardware test. The 22 live checks used a disposable synthetic account created solely for this new capstone project; they do not access personal project data.
+A second physical device, public hosting and production load were not tested. Tests cover independent sessions on the same host rather than claiming a multi-device hardware test. The 22 live checks used a disposable synthetic account created solely for this analytics project; they do not access personal project data.
 
 ## Interface revision — v1.2
 

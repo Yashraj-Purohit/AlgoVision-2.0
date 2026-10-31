@@ -3,7 +3,7 @@
   "version": "1.2.0",
   "private": true,
   "type": "module",
-  "description": "DSA capstone: commerce catalog, capital allocation, and logistics analytics",
+  "description": "DSA analytics: commerce catalog, capital allocation, and logistics analytics",
   "scripts": {
     "start": "node server.mjs",
     "test": "node --test",
