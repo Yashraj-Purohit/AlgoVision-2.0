@@ -1,0 +1,20 @@
+[
+  {
+    "id": "CAP-A",
+    "name": "Catalog automation",
+    "cost": 10,
+    "value": 60
+  },
+  {
+    "id": "CAP-B",
+    "name": "Delivery consolidation",
+    "cost": 20,
+    "value": 100
+  },
+  {
+    "id": "CAP-C",
+    "name": "Checkout resilience",
+    "cost": 30,
+    "value": 120
+  }
+]

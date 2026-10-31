@@ -1,0 +1,26 @@
+[
+  {
+    "id": "AV-101",
+    "name": "Wireless Headphones",
+    "category": "Electronics",
+    "price": 2499,
+    "stock": 42,
+    "priority": 9
+  },
+  {
+    "id": "AV-113",
+    "name": "Portable Speaker",
+    "category": "Electronics",
+    "price": 1499,
+    "stock": 20,
+    "priority": 7
+  },
+  {
+    "id": "INVALID-1",
+    "name": "Invalid Price",
+    "category": "Test",
+    "price": -10,
+    "stock": 5,
+    "priority": 2
+  }
+]

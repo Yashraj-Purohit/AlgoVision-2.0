@@ -1,0 +1,110 @@
+{
+  "note": "Deterministic synthetic example; excludes environment-specific timing",
+  "budget": 50,
+  "unit": "INR 1000",
+  "items": [
+    {
+      "id": "CAP-A",
+      "name": "Catalog automation",
+      "cost": 10,
+      "value": 60
+    },
+    {
+      "id": "CAP-B",
+      "name": "Delivery consolidation",
+      "cost": 20,
+      "value": 100
+    },
+    {
+      "id": "CAP-C",
+      "name": "Checkout resilience",
+      "cost": 30,
+      "value": 120
+    },
+    {
+      "id": "CAP-D",
+      "name": "Demand forecasting",
+      "cost": 25,
+      "value": 90
+    },
+    {
+      "id": "CAP-E",
+      "name": "Warehouse scanning",
+      "cost": 15,
+      "value": 55
+    }
+  ],
+  "exact": {
+    "selected": [
+      {
+        "id": "CAP-B",
+        "name": "Delivery consolidation",
+        "cost": 20,
+        "value": 100
+      },
+      {
+        "id": "CAP-C",
+        "name": "Checkout resilience",
+        "cost": 30,
+        "value": 120
+      }
+    ],
+    "value": 220,
+    "cost": 50,
+    "cells": 306
+  },
+  "greedy": {
+    "selected": [
+      {
+        "id": "CAP-A",
+        "name": "Catalog automation",
+        "cost": 10,
+        "value": 60,
+        "fraction": 1
+      },
+      {
+        "id": "CAP-B",
+        "name": "Delivery consolidation",
+        "cost": 20,
+        "value": 100,
+        "fraction": 1
+      },
+      {
+        "id": "CAP-E",
+        "name": "Warehouse scanning",
+        "cost": 15,
+        "value": 55,
+        "fraction": 1
+      }
+    ],
+    "cost": 45,
+    "value": 215
+  },
+  "fractionalUpperBound": {
+    "selected": [
+      {
+        "id": "CAP-A",
+        "name": "Catalog automation",
+        "cost": 10,
+        "value": 60,
+        "fraction": 1
+      },
+      {
+        "id": "CAP-B",
+        "name": "Delivery consolidation",
+        "cost": 20,
+        "value": 100,
+        "fraction": 1
+      },
+      {
+        "id": "CAP-C",
+        "name": "Checkout resilience",
+        "cost": 30,
+        "value": 120,
+        "fraction": 0.6666666666666666
+      }
+    ],
+    "cost": 50,
+    "value": 240
+  }
+}

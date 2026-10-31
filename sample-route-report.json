@@ -1,0 +1,79 @@
+{
+  "note": "Synthetic static distances in kilometers",
+  "source": "Hub",
+  "target": "Port",
+  "nodes": [
+    "Hub",
+    "North",
+    "East",
+    "Central",
+    "West",
+    "South",
+    "Port"
+  ],
+  "edges": [
+    [
+      "Hub",
+      "North",
+      7
+    ],
+    [
+      "Hub",
+      "West",
+      9
+    ],
+    [
+      "Hub",
+      "Central",
+      14
+    ],
+    [
+      "North",
+      "East",
+      10
+    ],
+    [
+      "North",
+      "West",
+      15
+    ],
+    [
+      "West",
+      "Central",
+      2
+    ],
+    [
+      "West",
+      "South",
+      11
+    ],
+    [
+      "Central",
+      "South",
+      9
+    ],
+    [
+      "East",
+      "Port",
+      6
+    ],
+    [
+      "South",
+      "Port",
+      4
+    ],
+    [
+      "Central",
+      "East",
+      8
+    ]
+  ],
+  "path": [
+    "Hub",
+    "North",
+    "East",
+    "Port"
+  ],
+  "distance": 23,
+  "settled": 7
+}
